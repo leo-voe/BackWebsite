@@ -7,30 +7,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #1e1e1e;
-            color: #ffffff;
+            background-color: #1E1E2E;
+            color: #F4F4F5;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
         .container {
             padding: 20px;
+            padding-bottom: 120px; 
         }
         .title {
-            background-color: #ccc;
+            background-color: #8ECAE6; 
             text-align: center;
             padding: 20px;
             font-size: 2rem;
-            color: #1e1e1e;
+            color: #1E1E2E; 
             margin-bottom: 20px;
+            border-radius: 10px;
         }
         .step {
-            background-color: #888;
-            color: #1e1e1e;
+            background-color: #2A2A3D; 
+            color: #F4F4F5;
             margin: 20px 0;
             padding: 10px;
             font-weight: bold;
             text-align: center;
+            border-radius: 8px;
         }
         .step-content {
             display: flex;
@@ -38,32 +41,63 @@
             margin-bottom: 20px;
         }
         .step-content img {
-            background-color: #ccc;
+            background-color: #8ECAE6; 
             width: 100%;
-            max-width: 400px; /* Limit image size */
+            max-width: 400px;
             height: auto;
             object-fit: contain;
             margin-right: 20px;
+            border: 2px solid #FFB703;
+            border-radius: 8px;
         }
         .step-content p {
             margin: 0;
             font-size: 1.2rem;
         }
+        .btn-primary {
+            background-color: #FFB703;
+            color: #1E1E2E;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #219EBC;
+            color: #F4F4F5;
+        }
+        .download-btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #2A2A3D;
+            color: #8ECAE6;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #FFB703;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #219EBC;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Title -->
         <div class="title">How to bake Butter-Cookies</div>
 
-        <!-- Step 1 -->
         <div class="step">Step 1: Mix dry ingredients</div>
         <div class="step-content">
             <img src="PXL_20241218_085622257.jpg" alt="Step 1 Image">
             <p>Through a sieve add 280g flour, 1 tsp of baking powder, 26g of vanilla sugar, 100g starch and 160g sugar to a bowl and mix it shortly.</p>
         </div>
 
-        <!-- Step 2 -->
         <div class="step">Step 2: Add egg yolks</div>
         <div class="step-content">
             <img src="PXL_20241218_085934399.jpg" alt="Step 2 Image">
@@ -87,7 +121,7 @@
             <img src="PXL_20241218_110307696.jpg" alt="Step 5 Image">
             <p>Let the dough rest for atleast 1 hour in the fridge wrapped in cling film.</p>
         </div>
-y
+
         <div class="step">Step 6: Roll dough out</div>
         <div class="step-content">
             <img src="PXL_20241218_124336728.jpg" alt="Step 6 Image">
@@ -99,7 +133,6 @@ y
             <img src="image copy.png" alt="Step 7 Image">
             <p>Use your cookie cutters and put the cutted shapes onto a baking tray with baking paper.</p>
         </div>
-        
 
         <div class="step">Step 8: Mix icing</div>
         <div class="step-content">
@@ -118,6 +151,22 @@ y
             <img src="PXL_20241218_135234733.jpg" alt="Step 10 Image">
             <p>Put cookies on a cooling tray of sort, and let them cool.</p>
         </div>
+
+        <div class="step">Download Recipe</div>
+        <div class="download-btn-container">
+            <a href="Butter Cookie Recipe.pdf" download class="btn btn-primary">
+                Download Recipe as PDF
+            </a>
+        </div>
     </div>
+
+    <footer>
+        <div>
+            <p>
+                <strong>Website Owner:</strong> L. Völcker |
+                <strong>Purpose:</strong> Educational project for HTML and web development practice.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
